@@ -1,10 +1,6 @@
 <template>
     <div id="front-page">
-      <a href="https://github.com/you">
-        <img style="position: absolute; top: 0; right: 0; border: 0;"
-             src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67"
-             alt="Fork me on GitHub"
-             data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png"></a>
+      <github-corner link="https://github.com/Chimpcode/blurpixel"/>
       <div class="title-container blrpxl-font">
         <div class="title cc-h0">{{title}}</div>
         <p class="subtitle">{{subtitle}}</p>
@@ -26,8 +22,12 @@
 </template>
 
 <script>
+import GithubCorner from '@/components/GithubCorner'
 export default {
   name: 'intro',
+  components: {
+    GithubCorner
+  },
   data () {
     return {
       title: 'Blur Pixel',
@@ -59,7 +59,7 @@ export default {
   color: white
 .title
   text-align center
-  /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;*/
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #7D95B1, 0 0 30px #7D95B1, 0 0 40px #7D95B1, 0 0 55px #7D95B1, 0 0 75px #7D95B1;
 .subtitle
   font-size 22px
 .github-badgets
