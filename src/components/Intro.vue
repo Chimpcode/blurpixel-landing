@@ -59,8 +59,10 @@ export default {
   color: white
 .title
   text-align center
+  /*text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 55px #ff0080, 0 0 75px #ff0080;*/
 .subtitle
   font-size 22px
 .github-badgets
   text-align center
+
 </style>
