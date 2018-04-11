@@ -1,5 +1,5 @@
 <template>
-    <div id="front-page">
+    <div id="front-page" :style="{ height: heightSize }">
       <github-corner link="https://github.com/Chimpcode/blurpixel"/>
       <div class="title-container blrpxl-font">
         <div class="title cc-h0">{{title}}</div>
@@ -25,6 +25,9 @@
 import GithubCorner from '@/components/GithubCorner'
 export default {
   name: 'intro',
+  props: {
+    heightSize: String
+  },
   components: {
     GithubCorner
   },
@@ -47,7 +50,6 @@ export default {
     linear-gradient(#377b80 0%, #882d4f 90%)
   background-blend-mode: overlay;
   width 100%
-  height 100vh
   position relative
 #front-page:before
   opacity 0.4

@@ -1,7 +1,7 @@
 <template>
     <div id="home">
       <topbar></topbar>
-      <intro></intro>
+      <cc-intro height-size="100vh"></cc-intro>
       <cc-section>
         <div class="hm-container">
           <div class="hm-title cc-h1">Hello there</div>
@@ -32,14 +32,14 @@
 </template>
 
 <script>
-import Intro from '@/components/Intro'
+import CcIntro from '@/components/CCIntro'
 import CcSection from '@/components/CCSection'
 import CcFooter from '@/components/CCFooter'
 import Topbar from '@/components/Topbar'
 import InputUrl from '@/components/InputUrl'
 
 export default {
-  components: { Intro, CcSection, CcFooter, Topbar, InputUrl },
+  components: { CcIntro, CcSection, CcFooter, Topbar, InputUrl },
   name: 'home',
   data () {
     return {
